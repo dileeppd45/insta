@@ -26,6 +26,7 @@ body, html {
     left:0px;
     color:#fff;
     display: block;
+    top:0;
     
 }
 .vNav a{
@@ -74,6 +75,7 @@ font-size: 2rem;
 }  
 .media{
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 900px;
     min-height: 100vh;
@@ -91,6 +93,7 @@ font-size: 2rem;
     color:#fff;
     font-size:0.9rem;
 }
+
 .profile-switch{
     margin-bottom: 20px;
     display: flex;
@@ -140,6 +143,12 @@ font-size: 2rem;
     text-decoration: none;
     color:blue;
 }
+@media(max-width:1350px){
+    .suggesction{
+        display: none;
+    }
+}
+
 .status{
     display: flex;
     flex-direction: column;
@@ -289,4 +298,49 @@ font-size: 2rem;
 .bgwhiteround{
     background-color: aliceblue;
     border-radius: 50%;
+}
+@media(max-width:1150px){
+    .vNav{
+        width: 50px;
+        top:0;
+    }
+    .nav-box-head{
+        display: none;
+    }
+    .w100{
+        justify-content: center;
+        width: calc(100vw - 100px);
+        right: 0px;
+        overflow-x: hidden;
+    }
+    .media{
+        max-width: calc(100vw - 100px);
+    }
+    .status{
+        max-width: calc(100vw - 100px);
+    }
+    .statusdiv{
+        max-width: calc(100vw - 100px);
+    }
+    .status-move{
+        max-width: calc(100vw - 100px);
+        gap :26rem;
+    }    
+    .nav-box span{
+        display: none;
+    }
+}
+@media(max-width:650px){
+    .vNav{
+        width: 30px;
+    }
+    .status-move{
+        gap:16rem
+    }
+    .fullSize{
+        gap: 0px;
+    }
+    .nav-box{
+        padding-left: 10px;
+    }
 }
